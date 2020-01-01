@@ -1,5 +1,9 @@
 <div class="p-3">
   <H1 [title]="title">{{ title }}</H1>
 
-  <app-counter></app-counter>
+  <a [routerLink]="['/projects']"> 项目列表</a>
+  <br />
+  <a [routerLink]="['/']"> 返回首页</a>
+
+  <router-outlet></router-outlet>
 </div>
