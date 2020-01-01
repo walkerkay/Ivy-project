@@ -1,5 +1,7 @@
 <div class="p-3">
   <H1 [title]="title">{{ title }}</H1>
 
-  <app-counter></app-counter>
+  <button class="btn-primary" (click)="loadComponent()">Load counter component</button>
+
+  <div class="counter-container" style="border: 1px solid #eee; margin-top: 20px; padding: 20px;"></div>
 </div>

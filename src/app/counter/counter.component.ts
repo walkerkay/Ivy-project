@@ -16,10 +16,12 @@ export class CounterComponent implements OnInit {
 
     plus() {
         this.counter++;
+        //  ɵdetectChanges(this);
     }
 
     reset() {
         this.counter = 0;
         this.counterReset.emit();
+        //  ɵdetectChanges(this);
     }
 }
