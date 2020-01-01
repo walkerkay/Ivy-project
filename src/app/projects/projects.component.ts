@@ -28,7 +28,7 @@ export function isSubscription(val: any): val is Subscription {
     return !!val && (val instanceof Subscription || typeof val.unsubscribe === 'function');
 }
 
-@UnSubscriber()
+// @UnSubscriber()
 @Component({
     selector: 'app-projects',
     templateUrl: './projects.component.html',
