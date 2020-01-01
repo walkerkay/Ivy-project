@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ivy-projct": {
+    "ivy-projcet": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ivy-projct",
+            "outputPath": "dist/ivy-projcet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -45,7 +45,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -67,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ivy-projct:build"
+            "browserTarget": "ivy-projcet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ivy-projct:build:production"
+              "browserTarget": "ivy-projcet:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ivy-projct:build"
+            "browserTarget": "ivy-projcet:build"
           }
         },
         "test": {
@@ -115,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ivy-projct:serve"
+            "devServerTarget": "ivy-projcet:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ivy-projct:serve:production"
+              "devServerTarget": "ivy-projcet:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ivy-projct"
+  "defaultProject": "ivy-projcet"
 }

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ivy-projct'`, () => {
+  it(`should have as title 'ivy-projcet'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ivy-projct');
+    expect(app.title).toEqual('ivy-projcet');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ivy-projct app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ivy-projcet app is running!');
   });
 });
